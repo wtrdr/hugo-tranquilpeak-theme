@@ -8,9 +8,11 @@
         <ul class="archive-posts archive-month" data-date="{{ $year }}{{ range first 1 (split .Key "-") }}{{ . }}{{ end }}">
           <h5 class="archive-title" style="text-decoration: none;">{{ range last 1 (split .Key "-") }}{{ i18n (lower (printf "date.month.%s" .)) }}{{ if i18n "date.month.suffix" }}{{ i18n "date.month.suffix" }}{{ end }}{{ end }}</h5>
           {{ range .Pages }}
-            <li class="archive-post archive-day" data-date="{{ dateFormat "20060102" .Date }}">
-              <a class="archive-post-title" href="{{ .Permalink }}">{{ .Title }}</a>
-            </li>
+            {{ if .IsPage }}
+              <li class="archive-post archive-day" data-date="{{ dateFormat "20060102" .Date }}">
+                <a class="archive-post-title" href="{{ .Permalink }}">{{ .Title }}</a>
+              </li>
+            {{ end }}
           {{ end }}
         </ul>
       {{ end }}
