@@ -29,9 +29,6 @@
 - id: "global.share_on"
   translation: "%sで共有"
 
-- id: "global.mail"
-  translation: "メール"
-
 - id: "global.rss"
   translation: "RSS"
 
@@ -88,10 +85,10 @@
   translation: "古い投稿"
 
 - id: "pagination.previous"
-  translation: "前"
+  translation: "prev"
 
 - id: "pagination.next"
-  translation: "次"
+  translation: "next"
 
 ## POST ##
 - id: "post.no_title"
