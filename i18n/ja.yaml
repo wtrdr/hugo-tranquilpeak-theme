@@ -85,10 +85,10 @@
   translation: "古い投稿"
 
 - id: "pagination.previous"
-  translation: "prev"
+  translation: "前の投稿"
 
 - id: "pagination.next"
-  translation: "next"
+  translation: "次の投稿"
 
 ## POST ##
 - id: "post.no_title"
