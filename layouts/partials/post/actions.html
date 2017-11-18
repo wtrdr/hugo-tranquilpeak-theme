@@ -1,5 +1,5 @@
-{{ if not (eq .Params.showActions false) }}
-  <div class="post-actions-wrap">
+<div class="post-actions-wrap">
+  {{ if not (eq .Params.showActions false) }}
       <nav {{ if eq .Params.showPagination false }}style="visibility: hidden"{{ end }}>
         <ul class="post-actions post-action-nav">
           {{ if .Site.Params.swapPaginator }}
@@ -70,5 +70,5 @@
         </li>
       {{ end }}
     </ul>
-  </div>
-{{ end }}
+  {{ end }}
+</div>
