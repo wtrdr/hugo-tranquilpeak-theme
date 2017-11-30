@@ -40,7 +40,7 @@
     <!-- open graph data -->
     <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else if .IsPage }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}">
     <meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else if .IsPage }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-    <meta property="og:type" content="blog">
+    <meta property="og:type" content="company">
     <meta property="og:title" content="{{ with .Title }}{{ . }}{{ else }}{{ .Site.Title }}{{ end }}">
     <meta property="og:url" content="{{ .URL }}">
     <meta property="og:site_name" content="{{ .Site.Title }}">
